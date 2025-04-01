@@ -2,11 +2,17 @@
 body {
     box-sizing: border-box;
     margin: 0;
+    overflow-x: hidden;
     padding: 0;
 }
 
 nav {
     display: flex;
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: center;
+    padding: 0 1rem; /* Add horizontal padding */
+    width: 100%; /* Ensure full width */
+
 }
 
 .home {
@@ -30,12 +36,13 @@ nav {
 .nav-links {
     display: flex;
     font-size: 1.3rem;
-    margin-left: 50%;
+    gap: 1rem;
+    margin-left: auto;
     margin-top: 10px;
 }
 
 .nav-links a {
-    margin-left: 20px;
+    gap: 1rem;
     text-decoration: none;
 }
 
@@ -44,6 +51,13 @@ nav {
     margin-left: 80px;
     text-align: center;
 }
+
+.hero, .features, .price-and-testimonials, .split-footer {
+    width: 100%;
+    max-width: 1200px; /* Optional: Limit max width */
+    margin: 0 auto; /* Center align */
+    padding: 0 1rem; /* Add padding instead of fixed margins */
+  }
 
 h1 {
     color: blue;
@@ -269,14 +283,27 @@ hr {
   
   /* Mobile - below 600px */
   @media (max-width: 599px) {
-    /* Tablet (600px+) - Horizontal menu */
+    body {
+        border: 1px solid blue;
+        width: 100%;
+    }
+    .hero, .columns, .price-and-testimonials {
+        margin-left: 0; /* Remove fixed margins */
+        width: 100%;
+        padding: 0 1rem; /* Use padding for spacing */
+      }
+
+    header, main, footer {
+        margin-right: 0;
+        width: 25rem;
+    }
     .favicon {
         margin-left: 10px;
     }
     nav {
         flex-direction: column;
         padding: 10px;
-        border: 1px solid black;
+        width: 17rem;
     }
     #logo {
         color: blue;
@@ -286,13 +313,16 @@ hr {
     .nav-links {
         /* font-size: 1.3rem; */
         flex-direction: column;
-        margin-left: 5%;
+        gap: 0.5rem;
+        margin-left: 0;
+        width: 15rem;
+    }
+    .nav-links a {
+        width: 10rem;
     }
     .hero {
         flex-direction: column;
-        margin-left: 10px;
         text-align: center;
-        width: 60%;
     }
     h1 {
         font-size: 1.6rem;
@@ -366,7 +396,6 @@ hr {
      }
     .price-and-testimonials {
         grid-template-columns: 1fr;
-        border: 1px solid black;
     }
     
     .price-columns {
@@ -423,7 +452,7 @@ hr {
         border: 1px solid rgb(209, 181, 181);
         margin-bottom: 2em;
         margin-top: 2em;
-        width: 80%;
+        width: 60%;
     }
     
     .split-footer {
@@ -431,7 +460,8 @@ hr {
         margin-bottom: 20px;
         padding-left: 10%;
         border: 1px solid black;
-        width: ;
+        width: 20rem;
+
     }
     
     .left-footer {
@@ -457,7 +487,7 @@ hr {
     }
     
     .right-footer {
-        margin-left: 10%;
+        margin-left: 2%;
         text-align: left;
         width: 20rem;
     }
