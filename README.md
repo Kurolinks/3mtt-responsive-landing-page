@@ -1,8 +1,8 @@
-#Mini Proect Assessment: Responsive Landing Page Design
+# Mini Proect Assessment: Responsive Landing Page Design
 
 Objective: The goal of the project is to design and develop a responsive landing page for a fictional product or service using HTML and  CSS. The page should be visually appealing, mobile-friendly and structured for a great user experience.
 
-##Task Breakdown
+## Task Breakdown
 
 1. Create a Hero Section: Include a headline that introduces the product or service. Add a subheadline that provides a short description or value proposition. Include a call-to-action (CTA) BUTTON (E.G., "Sign Up Now", "Learn More").
 
@@ -11,6 +11,6 @@ Objective: The goal of the project is to design and develop a responsive landing
 3. Design a Footer Section: Include contact details (email, phone number or social media links). Add copyright information or short message.
 
 
-#Technologies used
+## Technologies Used
 1. HTML
 2. CSS
